@@ -66,11 +66,7 @@
     text-transform: uppercase;
 }
 
-.container__botao {
-    display: none;
-}
-
-.container__titulo, .opcoes {
+.container__botao, .container__rotulo, .container__titulo, .opcoes {
     display: none;
 }
 
