@@ -1,0 +1,84 @@
+
+
+
+/*------- Estilo CSS para mobile ------*/
+
+hr {
+	margin: 0;
+}
+
+.rodape {
+	background-color: var(--cinza);
+	padding: 1em 0 1.5em 1em;
+}
+
+.lista-rodape {
+	display: none;
+}
+
+
+
+/*------- Estilo CSS para tablets ------*/
+
+@media screen and (min-width: 1024px) {
+
+	.rodape {
+		display: flex;
+		justify-content: space-around;
+		padding: 3em 2em 2em 2em;
+		width: auto;
+	}
+
+	.lista-rodape {
+		display: block;
+		margin: 0 1em 1em 1em;
+	}
+
+	.lista-rodape__titulo {
+		margin-bottom: 1.5em;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: var(--cinza-secundario);
+	}
+
+	.lista-rodape__item {
+		display: flex;
+		align-items: center;
+		margin: .9em 0;
+	}
+
+	.lista-rodape__link {
+		margin-left: .5em;
+		text-decoration: none;
+		font-size: 14px;
+		color: var(--cinza-terciario);
+
+	}
+
+	.rodape__titulo {
+		font-size: 24px;
+		width: 20%;
+	}
+
+	.lista-rodape__item:hover {
+		border-radius: 24px;
+		background-color: var(--laranja);
+		padding-right: 1em;
+	}
+
+	.lista-rodape__item:hover > .lista-rodape__link {
+		color: var(--branco);
+	}
+
+}
+
+/*------- Estilo CSS para desktops ------*/
+
+@media screen and (min-width: 1728px) {
+
+	.lista-rodape {
+		border-left: 1px solid var(--cinza-secundario);
+		padding-left: 1em;
+	}
+
+}
